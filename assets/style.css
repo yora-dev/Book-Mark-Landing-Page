@@ -323,3 +323,43 @@ article {
   width: auto;
   padding: 2rem 2.5rem;
 }
+
+.contact-page {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: var(--btn-primary);
+}
+
+.contact-email {
+  padding: 1.5rem 3rem;
+  width: 100%;
+  border: none;
+  font-size: 1.6rem;
+  border-radius: 0.8rem;
+  box-shadow: 0px 5px 5px 0px rgba(196, 182, 182, 0.75);
+  font-weight: lighter;
+}
+
+.btn-secondary {
+  background-color: var(--btn-secondary);
+  color: var(--body-color);
+  margin: 2rem 0 4rem;
+}
+
+.contact-join {
+  color: var(--body-color);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+
+.contact-header {
+  font-size: 2.2rem;
+  color: var(--body-color);
+  margin-bottom: 4rem;
+}
