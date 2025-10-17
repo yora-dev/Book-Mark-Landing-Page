@@ -1,0 +1,58 @@
+:root {
+  --btn-primary: hsl(231, 69%, 60%);
+  --btn-secondary: hsl(0, 94%, 66%);
+  --body-color: hsl(0, 0%, 97%);
+  --header-color: hsl(229, 31%, 21%);
+  --body-text: hsl(0, 2%, 90%);
+}
+
+* {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--body-color);
+}
+
+p,
+li,
+a {
+  font-size: 1.8rem;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.5rem 2.5rem;
+  border: 1px solid;
+  position: relative;
+}
+
+.nav__list {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  background-color: hsla(229, 31%, 21%, 0);
+  backdrop-filter: blur(10px);
+  color: var(--body-text);
+  top: 9.5rem;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}

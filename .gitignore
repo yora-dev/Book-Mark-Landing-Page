@@ -28,6 +28,7 @@ style-guide.md
 /dist
 /.next
 /out
+/design
 
 # IDEs and editors
 /.idea
