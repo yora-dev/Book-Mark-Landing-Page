@@ -21,7 +21,10 @@ body {
   background-color: var(--body-color);
 }
 
-p,
+p {
+  font-size: 1.6rem;
+}
+
 li,
 a {
   font-size: 1.8rem;
@@ -113,4 +116,91 @@ li {
 
 .btn-secondary {
   color: var(--header-color);
+}
+
+.features-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+  text-align: center;
+}
+
+.feature-img {
+  width: 100%;
+}
+
+.feature-heading {
+  color: var(--header-color);
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.feature-body {
+  color: var(--body-text);
+  line-height: 1.6;
+  margin-bottom: 4rem;
+  font-weight: 400;
+}
+
+.feature-header-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8rem;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.feature-name {
+  color: var(--header-color);
+  font-size: 2.2rem;
+  border: 1px solid lightgray;
+  border-left: 0;
+  border-right: 0;
+  padding: 2rem 0;
+}
+
+.feature-name:nth-child(1),
+.feature-name:nth-child(2) {
+  border-bottom: none;
+}
+
+/* .feature-header-container .active-feature {
+  border-bottom: 2px solid var(--btn-secondary);
+  border-bottom-width: 2px;
+} */
+
+.feature-header-container .active-feature {
+  position: relative;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.feature-header-container .active-feature::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 65%;
+  height: 5px;
+  background-color: var(--btn-secondary);
+}
+
+.feature-img {
+  margin: 4rem 0;
+}
+
+.full-header {
+  font-size: 2.4rem;
+  color: var(--header-color);
+  margin-bottom: 2rem;
+}
+
+.full-body {
+  color: var(--body-text);
+  line-height: 1.6;
+  margin-bottom: 4rem;
+  font-weight: 400;
 }
