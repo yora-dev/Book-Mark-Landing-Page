@@ -133,7 +133,7 @@ li {
 .feature-heading {
   color: var(--header-color);
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 2rem;
 }
 
@@ -193,7 +193,7 @@ li {
 }
 
 .full-header {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   color: var(--header-color);
   margin-bottom: 2rem;
 }
@@ -203,4 +203,53 @@ li {
   line-height: 1.6;
   margin-bottom: 4rem;
   font-weight: 400;
+}
+
+.download-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 4rem;
+}
+
+.download-header {
+  color: var(--header-color);
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.download-body {
+  color: var(--body-text);
+  line-height: 1.6;
+  margin-bottom: 6rem;
+  font-weight: 400;
+}
+
+.card-container {
+  width: 100%;
+}
+
+.download-card {
+  box-shadow: 0px 10px 10px 0px rgba(196, 182, 182, 0.75);
+  width: 100%;
+  margin-bottom: 4rem;
+  padding: 6rem 3rem 3rem;
+  background: url(images/bg-dots.svg);
+  background-repeat: no-repeat;
+  background-position: 0px 290px;
+  background-size: auto;
+  border-radius: 1rem;
+}
+
+.card-header {
+  color: var(--header-color);
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin: 3rem 0 1.5rem;
+}
+
+.card-version {
+  color: var(--body-text);
+  margin-bottom: 7rem;
 }
