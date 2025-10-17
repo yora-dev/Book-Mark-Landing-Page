@@ -17,8 +17,8 @@ npm-debug.log*
 .env.development.local
 .env.test.local
 .env.production.local
-./i.html
-./style-guide.md
+i.html
+style-guide.md
 
 # Testing
 /coverage
