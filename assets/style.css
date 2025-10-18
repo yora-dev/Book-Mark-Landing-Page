@@ -53,7 +53,7 @@ p {
   flex-direction: column;
   align-items: center;
   padding: 0 2.5rem;
-  /* display: none; */
+  display: none;
 }
 
 .nav__item {
@@ -336,7 +336,7 @@ article {
 }
 
 .accordion-question:hover {
-  color: var(--body-color);
+  opacity: 0.8;
 }
 
 .accordion-question::after {
@@ -423,4 +423,197 @@ article {
   display: flex;
   gap: 2rem;
   margin: 2rem 0 8rem;
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar {
+    padding: 0;
+    padding-top: 1rem;
+  }
+
+  .nav__ham {
+    display: none;
+  }
+
+  .nav__list {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    height: auto;
+    gap: 4rem;
+    margin: 0;
+    width: auto;
+  }
+
+  .nav__item {
+    border: none;
+    color: var(--header-color);
+    width: auto;
+    font-size: 1.6rem;
+  }
+
+  .nav__item:nth-child(3) {
+    border: none;
+  }
+
+  .login-link {
+    color: var(--body-color);
+    background-color: var(--btn-secondary);
+    border: none;
+    width: auto;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    margin-top: 0;
+  }
+
+  .nav__social {
+    display: none;
+  }
+
+  .home-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 12rem;
+    text-align: left;
+    height: 90vh;
+    margin-top: 4rem;
+  }
+
+  .home-content {
+    align-items: flex-start;
+    text-align: left;
+    width: 45%;
+    padding: 0;
+  }
+
+  .home-main {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .home-img {
+    width: 45%;
+    order: 2;
+  }
+
+  .home-heading {
+    font-size: 4rem;
+  }
+
+  .home-btn {
+    justify-content: flex-start;
+  }
+
+  .btn {
+    width: auto;
+    padding: 1.5rem 3rem;
+  }
+
+  .features-page {
+    flex-direction: column;
+    width: 100%;
+    padding: 8rem 4rem;
+  }
+
+  .all-accordion {
+    width: 100%;
+  }
+
+  .feature-header-container {
+    flex-direction: row;
+    justify-content: center;
+    border: none;
+  }
+
+  .feature-name {
+    border: none;
+    border-bottom: 3px solid transparent;
+    margin: 0 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .feature-header-container .active-feature::after {
+    width: 100%;
+  }
+
+  .feature-img {
+    width: 45%;
+  }
+
+  .feature-body,
+  .full-body,
+  .download-body {
+    margin: 0 40rem;
+  }
+
+  .faq-description {
+    text-align: center;
+    margin: 0 20rem;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  .download-card {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .faq-page {
+    width: 60%;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .contact-page {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .btn-contact,
+  .contact-email {
+    margin: 0;
+  }
+
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10rem;
+    width: 100%;
+  }
+
+  .footer-list {
+    flex-direction: row;
+    gap: 4rem;
+  }
+
+  .footer-item,
+  .footer-socials,
+  .footer-logo {
+    margin: 0;
+  }
 }
