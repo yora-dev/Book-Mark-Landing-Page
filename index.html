@@ -18,12 +18,16 @@
         <img src="assets/images/logo-bookmark.svg" alt="" class="nav__logo" />
         <div class="nav__group">
           <img src="assets/images/icon-hamburger.svg" alt="" class="nav__ham" />
-          <ul class="nav__list">
-            <li class="nav__item">Features</li>
-            <li class="nav__item">Pricing</li>
-            <li class="nav__item">Contact</li>
-            <a class="">Login</a>
-          </ul>
+          <div class="nav__list">
+            <a class="nav__item" href="#feature">Features</a>
+            <a class="nav__item" href="#">Pricing</a>
+            <a class="nav__item" href="#contact">Contact</a>
+            <a class="login-link">Login</a>
+            <div class="nav__social">
+              <img src="assets/images/icon-facebook.svg" alt="" />
+              <img src="assets/images/icon-twitter.svg" alt="" />
+            </div>
+          </div>
         </div>
       </nav>
 
@@ -49,7 +53,7 @@
       </div>
     </section>
 
-    <seciton class="features-page">
+    <seciton id="feature" class="features-page">
       <h2 class="feature-heading">Features</h2>
       <p class="feature-body">
         Our aim is to make it quick and easy for you to access your favourite
@@ -80,7 +84,7 @@
       </div>
     </seciton>
 
-    <section class="download-page">
+    <section id="download" class="download-page">
       <div class="download-description">
         <h2 class="download-header">Download the extension</h2>
         <p class="download-body">
@@ -175,7 +179,7 @@
       </div>
       <button class="faq-btn btn btn-primary">More Info</button>
     </section>
-    <section class="contact-page">
+    <section id="contact" class="contact-page">
       <p class="contact-join">35,000+ already joined</p>
       <h2 class="contact-header">Stay up-to-date with what we’re doing</h2>
       <input
@@ -211,9 +215,9 @@
         </g>
       </svg>
       <div class="footer-list">
-        <p class="footer-item">Features</p>
-        <p class="footer-item">Pricing</p>
-        <p class="footer-item">Contact</p>
+        <a href="#feature" class="footer-item">Features</a>
+        <a href="" class="footer-item">Pricing</a>
+        <a href="#contact" class="footer-item">Contact</a>
       </div>
 
       <div class="footer-socials">
