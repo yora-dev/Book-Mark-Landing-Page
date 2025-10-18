@@ -11,6 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 0.35s;
 }
 
 html {
@@ -135,6 +136,7 @@ p {
   white-space: nowrap;
   border-radius: 0.8rem;
   box-shadow: 0px 5px 5px 0px rgba(196, 182, 182, 0.75);
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -471,6 +473,8 @@ article {
     padding: 1rem 2rem;
     border-radius: 0.5rem;
     margin-top: 0;
+    border: 2px solid var(--btn-secondary);
+    cursor: pointer;
   }
 
   .nav__social {
@@ -615,5 +619,61 @@ article {
   .footer-socials,
   .footer-logo {
     margin: 0;
+  }
+
+  .nav__item:hover {
+    color: var(--btn-secondary);
+  }
+
+  .login-link:hover {
+    background-color: transparent;
+    border: 2px solid var(--btn-secondary);
+    color: var(--btn-secondary);
+  }
+
+  .btn-chrome {
+    border: 2px solid var(--btn-primary);
+  }
+
+  .btn-chrome:hover {
+    border: 2px solid var(--btn-primary);
+    background-color: transparent;
+    color: var(--btn-primary);
+  }
+
+  .btn-fire {
+    border: 2px solid var(--body-color);
+    background-color: var(--body-color);
+  }
+
+  .btn-fire:hover {
+    border: 2px solid var(--header-color);
+    background-color: transparent;
+    color: var(--header-color);
+  }
+
+  .feature-name:hover,
+  .footer-item:hover,
+  .accordion-question:hover,
+  .social:hover {
+    color: var(--btn-secondary);
+    cursor: pointer;
+  }
+
+  .card-btn {
+    border: 2px solid var(--btn-primary);
+  }
+
+  .card-btn:hover {
+    background-color: transparent;
+    color: var(--btn-primary);
+  }
+
+  .btn-contact {
+    border: 1px solid var(--btn-secondary);
+  }
+  .btn-contact:hover {
+    background-color: var(--body-color);
+    color: var(--btn-secondary);
   }
 }
